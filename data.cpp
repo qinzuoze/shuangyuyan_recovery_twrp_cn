@@ -884,6 +884,10 @@ void DataManager::SetDefaultValues()
 	mValues.insert(make_pair("tw_mount_system_ro", make_pair("1", 1)));
 	mValues.insert(make_pair("tw_never_show_system_ro_page", make_pair("0", 1)));
 
+    //en || zh-CN for languages
+    mValues.insert(make_pair("tw_lang_name", make_pair("zh-CN", 1)));
+    mValues.insert(make_pair("tw_lang_guisel",make_pair("zh-CN",1)));//for listbox
+
 	pthread_mutex_unlock(&m_valuesLock);
 }
 
